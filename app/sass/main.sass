@@ -11,9 +11,10 @@ body, html
   background: url("../img/bg.jpg")
   width: 100vw
   height: 100vh
-  background-size: cover
+  background-size: 100%
   background-repeat: no-repeat
   padding-top: 5vw
+  position: absolute
 
 .dashboard
   background: url("../img/3/full.png")
@@ -35,9 +36,32 @@ body, html
     top: 44px
     left: 50%
     transform: translateX(-50%)
-    background-color: antiquewhite
     box-sizing: border-box
     padding: 10px
+  &__row
+    width: 100%
+    font-size: 2vw
+    color: $primary-color
+    display: flex
+    justify-content: space-between
+  &__spinData 
+    font-family: Teko
+  &__icons
+    border-bottom: solid 1px $primary-color
+    margin-bottom: 15px
+    padding-bottom: 10px
+    display: flex
+    justify-content: space-between
+  &__icon
+    color: $primary-color
+    font-size: 2vw
+
+  &__time
+    text-align: center
+    color: #dfdfdf
+    font-size: 4vw
+    transform: translateY(-3vw)
+    font-family: Teko
 
 
 @import './media'
