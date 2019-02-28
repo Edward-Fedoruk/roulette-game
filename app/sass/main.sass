@@ -4,10 +4,40 @@
 
 body, html
   overflow-x: hidden
-  background-color: $primary-color
-  color: $secondary-color
+  background-color: #000000 
   font-size: 16px
 
+.background
+  background: url("../img/bg.jpg")
+  width: 100vw
+  height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+  padding-top: 5vw
+
+.dashboard
+  background: url("../img/3/full.png")
+  height: 90vh
+  width: 20vw
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-position: center
+  margin: auto
+  max-width: 986px
+  max-height: 417px
+  min-width: 375px
+  min-height: 388px
+  position: relative
+  &__info
+    width: 62%
+    height: 83%
+    position: absolute
+    top: 44px
+    left: 50%
+    transform: translateX(-50%)
+    background-color: antiquewhite
+    box-sizing: border-box
+    padding: 10px
 
 
 @import './media'
