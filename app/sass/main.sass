@@ -15,6 +15,8 @@ body, html
   background-repeat: no-repeat
   padding-top: 5vw
   position: absolute
+  display: flex
+  justify-content: space-around
 
 .dashboard
   background: url("../img/3/full.png")
@@ -23,7 +25,6 @@ body, html
   background-repeat: no-repeat
   background-size: 100% 100%
   background-position: center
-  margin: auto
   max-width: 986px
   max-height: 417px
   min-width: 375px
@@ -37,7 +38,7 @@ body, html
     left: 50%
     transform: translateX(-50%)
     box-sizing: border-box
-    padding: 10px
+    padding: 1.5vw
   &__row
     width: 100%
     font-size: 2vw
@@ -60,8 +61,60 @@ body, html
     text-align: center
     color: #dfdfdf
     font-size: 4vw
-    transform: translateY(-3vw)
+    transform: translateY(-6vw)
     font-family: Teko
+ 
+
+.reelBackgroundImage //  styles for sass inheritance
+  background-size: 100%
+  background-repeat: no-repeat
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+
+.reel
+  width: 25vw
+  height: 25vw
+  position: relative
+  align-self: flex-end
+  &__desk
+    @extend .reelBackgroundImage
+    z-index: 0
+    background-image: url("../img/2/1-Osnowa2.png")
+  &__numbers
+    @extend .reelBackgroundImage
+    &-rightReel
+      background-image: url("../img/2/3-Cifri2.png")
+    &-leftReel
+      background-image: url("../img/1/3-Cifri.png")
+      width: 109%
+      height: 109%
+      background-position: -1vw -1.6vw
+  &__border
+    @extend .reelBackgroundImage
+    background-image: url("../img/2/2-Korpus2.png")
+    z-index: 2
+  &__overlay
+    @extend .reelBackgroundImage
+    background-image: url("../img/2/4-Steklo2.png")
+    z-index: 1
+  &__core
+    @extend .reelBackgroundImage
+    background-image: url("../img/2/5.2-osy-2.png")
+    z-index: 3  
+    background-position-y: -0.3vw
+  &__arrow
+    @extend .reelBackgroundImage    
+    &-leftReel
+      background-image: url("../img/2/6-Ykazatel.png")
+      background-position-x: 10px
+      z-index: 4
+    &-rightReel
+      @extend .reelBackgroundImage
+      background-image: url("../img/1/5.0_Osy001.png")
+      z-index: 2
 
 
 @import './media'
