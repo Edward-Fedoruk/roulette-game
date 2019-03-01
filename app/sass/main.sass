@@ -82,10 +82,34 @@ body, html
   height: 25vw
   position: relative
   margin-top: 5vw
+  &__line
+    border-left: 1.099vw solid transparent
+    width: 0
+    transform-origin: center top
+    border-right: 1vw solid transparent
+    height: 0
+    position: absolute
+    border-bottom: 10.9vw solid #262626
+    z-index: 500
+    // transform: rotate(0deg)
+    top: 50% 
+    left: 47%
+  &__line:nth-child(odd)
+    // transform: rotate(15deg)
+    border-bottom-color: #876424
+    // border-right: .7vw solid transparent
+  &__number
+    position: absolute
+    color: #f8b026
+    left: 0
+    text-shadow: 0px 0px 6px #000
+    font-weight: bold
+    top: 0
+    transform: rotate(90deg) translate(8vw, .9vw)
+    font-size: 1vw
   &__desk
     @extend .reelBackgroundImage
     z-index: 0
-    background-image: url("../img/2/1-Osnowa2.png")
   &__numbers
     @extend .reelBackgroundImage
     &-rightReel
@@ -120,4 +144,5 @@ body, html
       z-index: 2
 
 
+  
 @import './media'
