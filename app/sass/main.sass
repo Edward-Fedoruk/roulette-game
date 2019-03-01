@@ -3,7 +3,7 @@
 @import './fonts'
 
 body, html
-  overflow-x: hidden
+  overflow: hidden
   background-color: #000000 
   font-size: 16px
 
@@ -17,36 +17,36 @@ body, html
   position: absolute
   display: flex
   justify-content: space-around
+  overflow: hidden
 
 .dashboard
   background: url("../img/3/full.png")
-  height: 90vh
-  width: 20vw
+  height: 35vw
+  width: 28vw
   background-repeat: no-repeat
   background-size: 100% 100%
   background-position: center
-  max-width: 986px
-  max-height: 417px
-  min-width: 375px
-  min-height: 388px
   position: relative
   &__info
     width: 62%
     height: 83%
     position: absolute
-    top: 44px
+    top: 4vw
     left: 50%
     transform: translateX(-50%)
     box-sizing: border-box
     padding: 1.5vw
   &__row
     width: 100%
-    font-size: 2vw
+    font-size: 1.6vw
     color: $primary-color
     display: flex
     justify-content: space-between
   &__spinData 
-    font-family: Teko
+    font-family: Lcd, sans-serif
+    width: 25%
+    text-align: center
+    padding: 0 4px
   &__icons
     border-bottom: solid 1px $primary-color
     margin-bottom: 15px
@@ -55,14 +55,17 @@ body, html
     justify-content: space-between
   &__icon
     color: $primary-color
-    font-size: 2vw
-
+    font-size: 1.6vw
+    padding: 0 4px
+    width: 25%
+    text-align: center
+    font-family: fantasy, sans-serif
   &__time
     text-align: center
     color: #dfdfdf
-    font-size: 4vw
-    transform: translateY(-6vw)
-    font-family: Teko
+    font-size: 3vw
+    transform: translateY(-5vw) 
+    font-family: Lcd, "Lucida Grande", Tahoma, Sans-Serif
  
 
 .reelBackgroundImage //  styles for sass inheritance
@@ -78,7 +81,7 @@ body, html
   width: 25vw
   height: 25vw
   position: relative
-  align-self: flex-end
+  margin-top: 5vw
   &__desk
     @extend .reelBackgroundImage
     z-index: 0
