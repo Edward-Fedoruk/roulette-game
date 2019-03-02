@@ -1,5 +1,5 @@
 (function() {
-  const response = JSON.parse(serverResponse)
+  const response = JSON.parse(SERVER_RESPONSE)
   const { club_info: { computers }, prizes } = response
 
   const prizeReel = document.querySelector(".reel__desk-leftReal")

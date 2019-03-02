@@ -1,4 +1,4 @@
-const serverResponse = JSON.stringify({
+const SERVER_RESPONSE = JSON.stringify({
   "history": [
     {
       "id": 1,
@@ -81,7 +81,7 @@ const serverResponse = JSON.stringify({
     ],
     "time_started": "18:00:00",
     "count_repeats": 5,
-    "repeats_interval": 10
+    "repeats_interval": 50000
   },
   "prizes": [
     "25",
@@ -116,6 +116,7 @@ const serverResponse = JSON.stringify({
     "250",
     "300",
     "500",
+    "750",
     "2000"
   ]
 })

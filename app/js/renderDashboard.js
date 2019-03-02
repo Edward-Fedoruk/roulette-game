@@ -1,6 +1,6 @@
 (function() {
 
-  const { history } = JSON.parse(serverResponse)
+  const { history } = JSON.parse(SERVER_RESPONSE)
 
   const dashboard = document.querySelector(".dashboard__info")
 
