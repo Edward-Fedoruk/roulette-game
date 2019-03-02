@@ -70,7 +70,7 @@ body, html
     font-family: Lcd, "Lucida Grande", Tahoma, Sans-Serif
  
 
-.reelBackgroundImage //  styles for sass inheritance
+.reelBackgroundImage
   background-size: 100%
   background-repeat: no-repeat
   width: 100%
@@ -112,6 +112,7 @@ body, html
   &__desk
     @extend .reelBackgroundImage
     z-index: 0
+    transition: transform 3s
   &__numbers
     @extend .reelBackgroundImage
     &-rightReel
