@@ -11,13 +11,11 @@ var gulp = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
-			'app/libs/jquery/*.js',
-			'app/libs/aos/aos.js',
-			'app/libs/slick/*.js',
-			'app/libs/marquee/*.js',
-			'app/js/main.js',
-			'app/js/lettersAnimation.js',
-			'app/js/wordAnimation.js',
+			'app/js/response.js',
+			'app/js/renderReels.js',
+			'app/js/clock.js',
+			'app/js/renderDashboard.js',
+			'app/js/spinReels.js',
 		]) 
 		.pipe(uglify())
 		.pipe(concat('common.min.js'))
