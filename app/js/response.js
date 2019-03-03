@@ -81,7 +81,7 @@ const SERVER_RESPONSE = JSON.stringify({
     ],
     "time_started": "18:00:00",
     "count_repeats": 5,
-    "repeats_interval": 50000
+    "repeats_interval": 10000
   },
   "prizes": [
     "25",
@@ -90,7 +90,7 @@ const SERVER_RESPONSE = JSON.stringify({
     "150",
     "200",
     "250",
-    "300",
+    "300",  
     "500",
     "25",
     "50",
